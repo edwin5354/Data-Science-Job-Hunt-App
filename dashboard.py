@@ -36,13 +36,13 @@ st.write(
 st.subheader('K-mode Clustering')
 st.write('Because the skills are categorical in nature, K-mode clustering and hierarchical clustering were applied to delineate the clusters within the dataset based on these categorical values.')
 
-st.image('./images/ML/elbow.png")
+st.image("./images/ML/elbow.png")
 st.write("By applying K-mode clustering, the optimal number of clusters for this dataset was identified. Although the elbow plot is a heuristic method, it indicates that the optimal number of clusters lies between 4 and 6, as evidenced by the noticeable decrease in cost within this range.")
 
 st.image('./images/ML/dendrogram.png')
 st.write("In contrast to typical hierarchical clustering, which typically employs Euclidean distance to determine proximity between data points, in this particular case where the variables are categorical, Hamming distance is the chosen metric for analysis. The dendrogram is then generated, suggesting an optimal cluster range of 4-6 based on the analysis.")
 
-st.image('.images/ML/cluster.png')
+st.image('./images/ML/cluster.png')
 st.write("The K-Mode clustering algorithm was reapplied to classify each datapoint into 6 clusters. The resulting bar plot illustrates the distribution of the datapoint types across the clusters. This distribution will be leveraged for supervised machine learning to analyze feature importance within each cluster, pinpointing the key features that contribute to the distinctions among them.")
 
 st.subheader('Decision Tree Classification Model')
